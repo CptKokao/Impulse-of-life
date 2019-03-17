@@ -1,0 +1,60 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.main-nav__menu {
+  position: relative;
+}
+
+.main-nav__logo {
+  border-bottom: 1px solid #e6e6e6;
+  height: 65px;
+}
+
+.main-nav__logo-image {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.main-nav__logo-link {
+  margin-left: 15px;
+}
+
+.main-nav__popup {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+// когда класс .main-nav--closed то скрываем .main-nav__popup
+.main-nav__popup--closed {
+  display: none;
+}
+
+.main-nav__popup-item {
+  height: 65px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// [href] применять только для href
+.main-nav__popup-link {
+  letter-spacing: 1px;
+
+  &:hover[href] {
+    opacity: 0.6;
+  }
+
+  &:active[href] {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,43 @@
+root = true
+
+[*]
+charset = utf-8  
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+# УБЕДИСЬ ЧТО В РЕДАКТОРЕ УСТАНОВЛЕН editorconfig. ctrl + shrift + P => editorconfig fix
+#
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+#
+# end_of_line(Перевод строки \n) - позволяет выбрать, что использовать на концах строк; Значения: lf, cr, crlf (всегда LF )
+#
+#--------------------------------------#
+# indent_style - позволяет задать жесткую или мягкую табуляцию для отступов; Значения: tab, space
+# Возможные значения:
+# - space
+# - tab
+#
+#--------------------------------------#
+# indent_size - позволяет задать ширину отступа использовании мягкой табуляции; 
+# Возможные значения:
+# - целое число
+# - tab
+# Если indent_size равно tab, indent_size будет установлен размер табуляции, который должен быть указан, tab_width
+#
+#--------------------------------------#
+# insert_final_newline - Указывает, должен ли файл заканчиваться символом новой строки
+# Возможные значения:
+# - true
+# - false
+# 
+#--------------------------------------#
+# trim_trailing_whitespace - Указывает, разрешено ли пробелы в конце строк
+# Возможные значения:
+# - true
+# - false

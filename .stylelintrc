@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+
+  "rules": {
+    "declaration-no-important": true,
+    "indentation": [2, {"ignore": ["inside-parens"]}]
+  }
+}
+
+# УБЕДИСЬ ЧТО В РЕДАКТОРЕ УСТАНОВЛЕН: 
+# linter-stylelint  (для css)
+# linter-eslint (для js)
+# ЗАВИСИМОСТИ:
+# linter 
+# intentions
+# linter-ui-default (ui для )

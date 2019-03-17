@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - "8.9"
+
+notifications:
+  email: false
+
+# Сценарий сборки по умолчанию для проектов с использованием nodejs: npm test
+# Смотри в package.json "scripts"
+# https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
+# Добавь проект в TRAVIS
