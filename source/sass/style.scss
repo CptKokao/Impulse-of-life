@@ -1,5 +1,7 @@
-@import "blocks/main-nav.scss",
-  "blocks/burger.scss",
+@import "variables.scss",
   "global.scss",
   "fonts.scss",
-  "variables.scss";
+
+  "blocks/burger.scss",
+  "blocks/main-nav.scss",
+  "blocks/posts";
