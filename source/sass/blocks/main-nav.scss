@@ -3,20 +3,21 @@
   margin: 0 auto;
   font-size: 20px;
   line-height: 20px;
-}
-
-.main-nav__menu {
   position: relative;
 }
 
+// .main-nav__menu {
+//   position: relative;
+// }
+
 .main-nav__logo {
   border-bottom: 1px solid $grey;
+  padding: 10px 0 10px 15px;
 }
 
 .main-nav__logo-item {
-  width: 65px;
-  height: 65px;
-  margin-left: 15px;
+  width: 45px;
+  height: 45px;
 }
 
 .main-nav__popup {
@@ -56,16 +57,24 @@
 
 .main-nav__logo-image {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 768px;
+    font-size: 18px;
+    line-height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main-nav__logo {
     border-bottom: none;
+    height: auto;
+    margin-left: 50px;
   }
 
   .main-nav__logo-item {
@@ -74,12 +83,9 @@
   }
 
   .main-nav__menu {
+    margin-right: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 30px;
-    height: 130px;
   }
 
   .main-nav__popup {
@@ -88,7 +94,7 @@
   }
 
   .main-nav__popup-item {
-    margin-right: 15px;
+    margin-right: 20px;
     border-bottom: none;
   }
 
@@ -98,6 +104,11 @@
     padding-top: 2px;
   }
 
+  // когда класс .main-nav--closed то скрываем .main-nav__popup
+  .main-nav__popup--closed {
+    display: flex;
+  }
+
   .burger {
     display: none;
   }
@@ -105,9 +116,13 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1200px;
+    width: 1024px;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  .main-nav__logo {
+    padding: 20px 0;
   }
 
   .main-nav__popup-item {
@@ -115,7 +130,7 @@
   }
 
   .main-nav__logo-item {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
   }
 }
