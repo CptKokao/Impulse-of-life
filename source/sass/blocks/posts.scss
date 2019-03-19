@@ -4,15 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 
 .post-wrapper {
   width: 320px;
-  outline: 1px solid red;
-  margin: 30px 10px 0 10px;
+  margin-bottom: 30px;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
@@ -46,17 +46,31 @@
   margin-top: 3px;
 }
 
+.post-btn {
+  width: 120px;
+  height: 30px;
+  border: 3px solid #ffbc93;
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding: 15px 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
+  .post {
+    padding-top: 60px;
+  }
+
   .post-wrapper {
     width: 580px;
-    margin-top: 35px;
+    margin-bottom: 60px;
   }
 
   .post-item {
     &::before {
       font-size: 10px;
       padding: 10px;
-
     }
   }
 
@@ -76,7 +90,6 @@
   .post-wrapper--main {
     width: 660px;
     position: relative;
-    margin-top: 35px;
   }
 
   .post-title--main {
@@ -96,6 +109,14 @@
     right: 20px;
     font-size: 12px;
   }
+
+  .post-btn {
+    width: 155px;
+    height: 40px;
+    border: 3px solid #ffbc93;
+    font-size: 16px;
+    padding: 20px 10px 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -107,7 +128,7 @@
 
   .post-wrapper {
     width: 450px;
-    margin: 30px 15px 0 15px;
+    margin: 0 17px 40px;
   }
 
   .post-wrapper--main {
