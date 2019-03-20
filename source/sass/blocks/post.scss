@@ -130,7 +130,6 @@
   .post {
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
   }
 
   .post-wrapper {
@@ -138,6 +137,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 1200px;
   }
 
   .post-box {
