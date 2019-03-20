@@ -1,16 +1,18 @@
 .post {
-  margin: auto;
   background-color: $grey;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 
-.post-wrapper {
+.post-box {
   width: 320px;
   margin-bottom: 30px;
+}
 
+.box {
   &:hover {
     opacity: 0.7;
   }
@@ -50,7 +52,6 @@
   width: 120px;
   height: 30px;
   border: 3px solid #ffbc93;
-  margin-bottom: 30px;
   font-size: 14px;
   padding: 15px 10px 0;
   font-weight: bold;
@@ -63,6 +64,12 @@
   }
 
   .post-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-box {
     width: 580px;
     margin-bottom: 60px;
   }
@@ -87,7 +94,7 @@
     color: grey;
   }
 
-  .post-wrapper--main {
+  .post-box--main {
     width: 660px;
     position: relative;
   }
@@ -112,7 +119,7 @@
 
   .post-btn {
     width: 155px;
-    height: 40px;
+    height: 35px;
     border: 3px solid #ffbc93;
     font-size: 16px;
     padding: 20px 10px 0;
@@ -127,11 +134,18 @@
   }
 
   .post-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .post-box {
     width: 450px;
     margin: 0 17px 40px;
   }
 
-  .post-wrapper--main {
+  .post-box--main {
     width: 935px;
   }
 
